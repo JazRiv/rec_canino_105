@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reconocimiento Canino</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <center>
+        <h2>🐕 Aplicacion web de Reconocimiento Canino 🐩</h2>
+        <p>Este modelo esta entrenado para identificar las siguientes razas de perros:</p>
+        </center>
+        <b id="lista">
+            Shih tzu
+            <hr>
+            Husky
+            <hr>
+            Chihuahua
+            <hr>
+            Labrador
+            <hr>
+        </b>
+        <center>
+            
+            <p id="I">Nota: Si no tienes un perro de las razas anteriores a la mano,
+            puedes usar una foto de internet, solo ajusta la luz 
+            y la posicion de tu telefono para que el modelo lo pueda identificar </p>
+       
+            <label>Cámara: </label>
+      <div id="camara">
+      </div>
+      <br><br>
+      <label>Tu foto:</label>
+      <div id="resultado"></div>
+      <br><br>
+      <button onclick="take()" class="btn btn-success">Tomar foto</button>
+      <br><br>
+      <button onclick="idt()" class="btn btn-success">Identificar imagen</button>
+      <br><br>
+
+      <p id="dog">Raza:</p>
+      <p id="pre">Precisión:</p>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
