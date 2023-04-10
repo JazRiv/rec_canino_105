@@ -1,4 +1,4 @@
-var modelo = ml5.imageClassifier("https:teachablemachine.withgoogle.com/models/6nK555Qtf/model.json", listo);
+var modelo = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/6nK555Qtf/model.json", listo);
 
 Webcam.set({
     width:350,
